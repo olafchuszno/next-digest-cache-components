@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 const PAGES = [
   { href: '/static-route', label: 'Static Route' },
-  { href: '/cache', label: 'Cache' },
   { href: '/suspense', label: 'Suspense' },
+  { href: '/cache', label: 'Cache' },
   { href: '/create-post', label: 'Create Post' },
   { href: '/cache-tag', label: 'Cache Tag' },
   { href: '/revalidate', label: 'Revalidate' },
