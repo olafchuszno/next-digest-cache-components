@@ -8,13 +8,18 @@ const PAGES = [
   { href: '/cache-tag', label: 'Cache Tag' },
   { href: '/revalidate', label: 'Revalidate' },
   { href: '/cached-function', label: 'Cached Function' },
-  { href: '/function-from-server-to-client-component', label: 'Function from Server to Client Component' },
+  {
+    href: '/function-from-server-to-client-component',
+    label: 'Function passed from Server to Client Component',
+  },
 ];
 
 export default function Page() {
   return (
     <main className="p-8">
-      <h1 className="text-2xl font-semibold mb-4">Welcome to Next.js Cache Components Digest!</h1>
+      <h1 className="text-2xl font-semibold mb-4">
+        Welcome to Next.js Cache Components Digest!
+      </h1>
 
       <h2 className="text-xl font-medium mb-4">Available Pages:</h2>
 
