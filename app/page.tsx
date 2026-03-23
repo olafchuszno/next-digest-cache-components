@@ -7,6 +7,8 @@ const PAGES = [
   { href: '/create-post', label: 'Create Post' },
   { href: '/cache-tag', label: 'Cache Tag' },
   { href: '/revalidate', label: 'Revalidate' },
+  { href: '/cached-function', label: 'Cached Function' },
+  { href: '/function-from-server-to-client-component', label: 'Function from Server to Client Component' },
 ];
 
 export default function Page() {
