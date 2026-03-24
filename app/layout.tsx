@@ -29,7 +29,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <header className="mb-8">
+        <header className="mb-8 flex gap-2">
           <Link href="/" className="bordered w-fit">
             Go home
           </Link>
