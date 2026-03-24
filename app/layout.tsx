@@ -35,6 +35,7 @@ export default function RootLayout({
           </Link>
           <Link
             className="bordered"
+            prefetch
             href={'https://next-digest-nine.vercel.app/'}
           >
             Cache Components (false)
