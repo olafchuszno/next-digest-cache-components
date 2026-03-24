@@ -33,6 +33,12 @@ export default function RootLayout({
           <Link href="/" className="bordered w-fit">
             Go home
           </Link>
+          <Link
+            className="bordered"
+            href={'https://next-digest-nine.vercel.app/'}
+          >
+            Cache Components (false)
+          </Link>
         </header>
         {children}
       </body>
