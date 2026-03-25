@@ -33,7 +33,7 @@ const GROUPS = [
       },
       {
         href: '/cache-tag',
-        label: 'Cache Tag',
+        label: 'Cache Tag (getPostsCached)',
         description:
           'cacheTag() attaches a string tag to a cached function\'s entry. Call revalidateTag("posts") later to surgically expire just that slice of cache.',
       },
