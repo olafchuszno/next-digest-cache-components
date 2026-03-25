@@ -40,7 +40,7 @@ export default function RootLayout({
               prefetch
               href={'https://next-digest-nine.vercel.app/'}
             >
-              Cache Components (false)
+              Visit other demo (<code>cacheComponents: false</code>)
             </Link>
           </header>
           {children}
