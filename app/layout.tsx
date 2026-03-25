@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 import { Providers } from './Providers';
+import { cleanPosts } from '@/lib/posts/cleanPosts';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -42,6 +43,11 @@ export default function RootLayout({
             >
               Visit other demo (<code>cacheComponents: false</code>)
             </Link>
+            <form action={cleanPosts}>
+              <button className="bordered" type="submit">
+                Clean posts
+              </button>
+            </form>
           </header>
           {children}
         </body>

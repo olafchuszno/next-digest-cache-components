@@ -94,7 +94,7 @@ const GROUPS = [
           'A form whose action is a "use server" function. The mutation runs on the server with no client JS required — the App Router equivalent of an API route POST.',
       },
       {
-        href: '/revalidate',
+        href: '/create-post/with-ravalidate',
         label: 'Create Post + Revalidate',
         description:
           'Same Server Action form, but calls revalidateTag() after the mutation so cached pages that display posts are immediately invalidated.',

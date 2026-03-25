@@ -6,7 +6,9 @@ export default async function Page() {
       <h1>Create Post</h1>
       <form action={createPost}>
         <div>
-          <label className='block' htmlFor="title">Title</label>
+          <label className="block" htmlFor="title">
+            Title
+          </label>
           <input
             className="server-border"
             id="title"
@@ -16,7 +18,9 @@ export default async function Page() {
           />
         </div>
         <div>
-          <label className='block' htmlFor="body">Body</label>
+          <label className="block" htmlFor="body">
+            Body
+          </label>
           <textarea className="server-border" id="body" name="body" required />
         </div>
         <button className="server-border server-text" type="submit">
