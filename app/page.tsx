@@ -46,38 +46,6 @@ const GROUPS = [
     ],
   },
   {
-    title: 'Mutations & Revalidation',
-    description:
-      'Server Actions mutate data. After a mutation, call revalidateTag() or revalidatePath() to expire the relevant cache entries so the next visitor sees fresh data.',
-    pages: [
-      {
-        href: '/create-post',
-        label: 'Create Post (Server Action)',
-        description:
-          'A form whose action is a "use server" function. The mutation runs on the server with no client JS required — the App Router equivalent of an API route POST.',
-      },
-      {
-        href: '/revalidate',
-        label: 'Create Post + Revalidate',
-        description:
-          'Same Server Action form, but calls revalidateTag() after the mutation so cached pages that display posts are immediately invalidated.',
-      },
-    ],
-  },
-  {
-    title: 'Server ↔ Client',
-    description:
-      'Server functions can be passed as props to client components. The server renders the function reference; the client receives a callable RPC stub — no manually written API route.',
-    pages: [
-      {
-        href: '/function-from-server-to-client-component',
-        label: 'Server Function → Client Component',
-        description:
-          '"use server" functions defined inline in a Server Component and passed as props. The client component calls them like regular callbacks; execution always stays on the server.',
-      },
-    ],
-  },
-  {
     title: 'The 4 Cache Types',
     description:
       'Next.js has 4 cache layers. With cacheComponents: true the Data Cache is replaced by "use cache" on functions/components. The other three layers (Router, Full Route, Request Memoization) still apply.',
@@ -111,6 +79,38 @@ const GROUPS = [
         label: 'Data Cache ("use cache" on function)',
         description:
           'With cacheComponents: true, cache data by adding "use cache" to an async function instead of fetch options. The result persists across requests until revalidated.',
+      },
+    ],
+  },
+  {
+    title: 'Mutations & Revalidation',
+    description:
+      'Server Actions mutate data. After a mutation, call revalidateTag() or revalidatePath() to expire the relevant cache entries so the next visitor sees fresh data.',
+    pages: [
+      {
+        href: '/create-post',
+        label: 'Create Post (Server Action)',
+        description:
+          'A form whose action is a "use server" function. The mutation runs on the server with no client JS required — the App Router equivalent of an API route POST.',
+      },
+      {
+        href: '/revalidate',
+        label: 'Create Post + Revalidate',
+        description:
+          'Same Server Action form, but calls revalidateTag() after the mutation so cached pages that display posts are immediately invalidated.',
+      },
+    ],
+  },
+  {
+    title: 'Server ↔ Client',
+    description:
+      'Server functions can be passed as props to client components. The server renders the function reference; the client receives a callable RPC stub — no manually written API route.',
+    pages: [
+      {
+        href: '/function-from-server-to-client-component',
+        label: 'Server Function → Client Component',
+        description:
+          '"use server" functions defined inline in a Server Component and passed as props. The client component calls them like regular callbacks; execution always stays on the server.',
       },
     ],
   },
